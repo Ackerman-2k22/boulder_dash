@@ -1,0 +1,33 @@
+-- Procedure
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MapsdByCode`(IN `p_code` VARCHAR(2))
+    READS SQL DATA
+    SQL SECURITY INVOKER
+SELECT * FROM jpublankproject.map where `code`=p_code
+
+---------------------------------------------------------------------------------
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MapdById`(IN `p_id` INT)
+    READS SQL DATA
+    SQL SECURITY INVOKER
+SELECT * FROM jpublankproject.map WHERE id = p_id
+
+---------------------------------------------------------------------------------
+
+-- Functions
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `filepath_diamond`(dir text) RETURNS text CHARSET utf8mb4
+    DETERMINISTIC
+begin
+return(select diamond from element
+where id = dir);
+end
+
+
+----------------------------------------------------------------------------------
+*CREATE DEFINER=`root`@`localhost` FUNCTION `filepath_diamond`(dir text) RETURNS text CHARSET utf8mb4
+    DETERMINISTIC
+begin
+return(select diamond from element
+where id = dir);
+end
