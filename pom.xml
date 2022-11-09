@@ -19,6 +19,7 @@
 		<module>entity</module>
         <module>untitled</module>
         <module>untitled</module>
+        <module>test</module>
     </modules>
 	<dependencies>
 		<dependency>

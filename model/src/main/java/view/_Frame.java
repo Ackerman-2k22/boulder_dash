@@ -2,8 +2,6 @@ package view;
 
 import contract.IGamebuilder;
 import contract.IGraphicSprite;
-import contract.Move;
-import contract.Windows;
 import controller.GraphicSprite;
 import model.Gamebuilder;
 //zimport model.Model.*;

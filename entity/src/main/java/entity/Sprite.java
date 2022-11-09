@@ -64,6 +64,7 @@ public abstract class Sprite  implements ISprite {
         return height;
     }
 
+    @Override
     public int getWhidht() {
         return whidht;
     }

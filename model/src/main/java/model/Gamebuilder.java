@@ -106,11 +106,17 @@ public class Gamebuilder extends Observable implements IGamebuilder {
 
     }
 
+    /**
+     * @return
+     */
     @Override
     public ArrayList<Sprite> setArraysptite() {
         return this.array_sprite;
     }
 
+    /**
+     * @param sprite
+     */
     @Override
     public void buildArraysptite(ISprite sprite) {
 

@@ -15,6 +15,9 @@ public interface IGamebuilder {
 
    // void bUILDArea(java.util.Map map);
 
+    /**
+     * @param sprite
+     */
     public void buidmobile(ISprite sprite);
 
 
@@ -39,5 +42,12 @@ public interface IGamebuilder {
 
     void Move(Move m);
 
+    /**
+     * @param x
+     * @param y
+     * @param m
+     * @return
+     * @throws IOException
+     */
     Sprite[][] Colision(int x, int y,Sprite[][]m) throws IOException;
 }

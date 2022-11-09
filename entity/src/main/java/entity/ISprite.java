@@ -3,6 +3,9 @@ package entity;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ *
+ */
 public interface ISprite {
 
     public String getName() ;
@@ -11,10 +14,16 @@ public interface ISprite {
 
     public void setName(String name) ;
 
+    /**
+     * @param whidht
+     */
     public void setWhidht(int whidht) ;
 
     public int getHeight() ;
 
+    /**
+     * @return
+     */
     public int getWhidht() ;
 
 

@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="view" />
         <module name="controller" />
+        <module name="test" />
+        <module name="contract" />
         <module name="model" />
         <module name="main" />
         <module name="entity" />
-        <module name="contract" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

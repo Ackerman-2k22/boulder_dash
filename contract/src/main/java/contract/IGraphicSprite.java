@@ -15,6 +15,11 @@ public interface IGraphicSprite {
      * @throws IOException
      */
     public JPanel getpanel();
+
+    /**
+     * @param sprite
+     * @throws IOException
+     */
     public void buildcomponment(ISprite sprite) throws IOException;
 
    // void buildcomponment(ISprite sprite) throws IOException;
@@ -25,7 +30,11 @@ public interface IGraphicSprite {
     //public  void update();
 
 
-
+    /**
+     * @param g
+     * @throws IOException
+     * @throws InterruptedException
+     */
     void movGest(Graphics2D g) throws IOException, InterruptedException;
 
     //void renew(int a, int b);
